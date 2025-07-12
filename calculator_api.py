@@ -154,7 +154,7 @@ def run_calculator(state: str, mthly: float, latlong: str):
     irr = calc_irr(cfs)
     life_sav = sum(cfs[1:])
     tot_co2 = sum(yields) * EMISSION_FACTOR
-    trees = tot_co2 / TREE_CO2_PER_YEAR
+    trees = int(tot_co2 / TREE_CO2_PER_YEAR)
 
     return {
         "recommended_kw": kWp_req,
