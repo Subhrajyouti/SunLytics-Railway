@@ -21,7 +21,7 @@ INVERTER_COST = 30000
 INV_REPL_INTERVAL = 10
 DISCOUNT_RATE = 0.08
 EMISSION_FACTOR = 0.82
-TREE_CO2_PER_YEAR = 10.0
+TREE_CO2_PER_YEAR = 22.0
 
 def download_himawari_tmy(lat, lon):
     wkt = f"POINT({lon} {lat})"
